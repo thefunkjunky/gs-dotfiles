@@ -45,16 +45,15 @@ add-apt-repository -y ppa:alessandro-strada/ppa
 # or
 # snap install --classic go
 
-# Cleanup multiple repo configs
+# Script to cleanup multiple repo configs. 
 cmod +x $dotfiles_wd/apt-remove-duplicate-source-entries.py
-
 
 # install packages
 apt update
 apt install -y python-dev python3-dev python-pip python3-pip pylint \
             vim \
             build-essential \
-            libssl-dev libffi-dev \
+            libssl-dev libffi-dev libgtk-3-dev\
             git \
             net-tools \
             sublime-text \
