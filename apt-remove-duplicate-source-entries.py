@@ -1,4 +1,5 @@
-#!/usr/bin/env python3 -Es
+#!/usr/bin/env python3
+######!/usr/bin/env python3 -Es
 """
 Detects and interactively deactivates duplicate Apt source entries in
 `/etc/sources.list' and `/etc/sources.list.d/*.list'.
