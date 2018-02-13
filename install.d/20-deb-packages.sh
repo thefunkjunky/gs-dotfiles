@@ -33,6 +33,10 @@ add-apt-repository -y ppa:otto-kesselgulasch/gimp-edge
 ## Add Steam repo
 add-apt-repository -y multiverse
 
+## Add Google Drive OCamlFUSE repo
+add-apt-repository -y ppa:alessandro-strada/ppa
+
+
 ## Add unofficial Go repo
 ## (needs to be tested)
 # add-apt-repository -y ppa:gophers/archive
@@ -67,7 +71,9 @@ apt install -y python-dev python3-dev python-pip python3-pip pylint \
             google-cloud-sdk-bigtable-emulator \
             kubectl \
             steam \
-            vlc browser-plugin-vlc
+            vlc browser-plugin-vlc \
+            google-drive-ocamlfuse
+
 
 snap install --classic go
 
