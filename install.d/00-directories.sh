@@ -23,5 +23,5 @@ sudo -u $dotfiles_usr cp  $dotfiles_wd/home-config/.bash_profile $dotfiles_usr_h
 sudo -u $dotfiles_usr cp -rf $dotfiles_wd/home-config/bashrc.d $dotfiles_usr_home/.shellrc/
 # sudo -u $dotfiles_usr cp -rn $dotfiles_wd/home-config/.ssh $dotfiles_usr_home/.ssh
 sudo -u $dotfiles_usr cp  $dotfiles_wd/home-config/.gitconfig $dotfiles_usr_home/.gitconfig
-sudo -u $dotfiles_usr cp -rf $dotfiles_wd/input-font/Input_Fonts $dotfiles_user_home/.fonts/
+sudo -u $dotfiles_usr cp -rf $dotfiles_wd/input-font/Input_Fonts $dotfiles_usr_home/.fonts/
 
