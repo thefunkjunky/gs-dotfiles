@@ -6,7 +6,8 @@
 ## https://unix.stackexchange.com/questions/190571/sudo-in-non-interactive-script
 ## for idea on how to run sudo in script
 
-## Detect the user who launched the script and save relevant info
+## Detect the user who launched the script and save relevant info.
+## (this might not actually be necessary)
 export dotfiles_usr=$(env | grep SUDO_USER | cut -d= -f 2)
 export dotfiles_usr_home=$(sudo -u $dotfiles_usr echo $HOME)
 export dotfiles_wd=$(sudo -u $dotfiles_usr pwd)

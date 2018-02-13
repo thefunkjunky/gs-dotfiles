@@ -2,22 +2,6 @@
 
 ## Python / Python3 setup
 
-pip install -U pip
-pip install -U setuptools \
-                virtualenv \
-                xonsh \
-                pyinstaller \
-                pytest \
-                mypy \
-                requests \
-                numpy \
-                matplotlib \
-                scipy \
-                pandas \
-                scrapy \
-                wxPython \
-                Pillow
-
 pip3 install -U pip
 pip3 install -U setuptools \
                 virtualenv \
@@ -34,4 +18,7 @@ pip3 install -U setuptools \
                 scrapy \
                 wxPython \
                 Pillow
+
+pip install -U pip
+
 
