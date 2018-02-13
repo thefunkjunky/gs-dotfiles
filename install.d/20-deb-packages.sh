@@ -5,6 +5,7 @@
 ## Upgrade current packages
 apt update
 apt upgrade -y
+apt install -y curl
 
 ## Add Sublime Text key/repo
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
