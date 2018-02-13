@@ -5,7 +5,7 @@
 ## Upgrade current packages
 apt update
 apt upgrade -y
-apt install -y curl
+apt install -y curl python3-apt python-pip python3-pip
 
 ## Add Sublime Text key/repo
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
@@ -44,6 +44,9 @@ add-apt-repository -y ppa:alessandro-strada/ppa
 # apt install golang-1.9-go
 # or
 # snap install --classic go
+
+# Cleanup multiple repo configs
+cmod +x $dotfiles_wd/apt-remove-duplicate-source-entries.py
 
 
 # install packages

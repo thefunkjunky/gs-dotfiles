@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x
+
 ## Personal set-up scripts for Ubuntu Linux
 ## Heavily inspired (*ahem* copied) by https://github.com/Juxtaposedwords/dotfiles
 
@@ -21,10 +23,12 @@ fi
 ## Execute each dotfiles script
 for file in $dotfiles_wd/install.d/*.sh; do
   chmod +x $file
-  sudo bash $file
+  bash $file
 done
 
 ## remove env variables
 unset dotfiles_usr
 unset dotfiles_usr_home
 unset dotfiles_wd
+
+set +x
