@@ -46,7 +46,7 @@ add-apt-repository -y ppa:alessandro-strada/ppa
 # snap install --classic go
 
 # Script to cleanup multiple repo configs. 
-cmod +x $dotfiles_wd/apt-remove-duplicate-source-entries.py
+chmod +x $dotfiles_wd/apt-remove-duplicate-source-entries.py
 
 # install packages
 apt update

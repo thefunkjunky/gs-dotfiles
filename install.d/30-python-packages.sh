@@ -16,7 +16,6 @@ pip3 install -U setuptools \
                 scipy \
                 pandas \
                 scrapy \
-                wxPython \
                 Pillow
 
 pip install -U pip
