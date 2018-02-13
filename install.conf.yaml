@@ -1,0 +1,13 @@
+- clean: []
+- shell:
+    - mkdir -p ~/.shellrc
+- link:
+    ~/.shellrc/bashrc.d: 
+        create: true
+        path: bashrc.d
+    ~/.shellrc/bin:
+        create: true
+        path: bin
+    ~/.vimrc: 
+        create: true
+        path: home-config/vimrc
