@@ -21,7 +21,7 @@ fi
 ## Execute each dotfiles script
 for file in $dotfiles_wd/install.d/*.sh; do
   chmod +x $file
-  bash $file
+  sudo bash $file
 done
 
 ## remove env variables
