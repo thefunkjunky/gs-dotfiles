@@ -53,7 +53,7 @@ apt update
 apt install -y python-dev python3-dev python-pip python3-pip pylint \
             vim \
             build-essential \
-            libssl-dev libffi-dev libgtk-3-dev\
+            libssl-dev libffi-dev libgtk-3-dev libgtk-2-dev\
             git \
             net-tools \
             sublime-text \
