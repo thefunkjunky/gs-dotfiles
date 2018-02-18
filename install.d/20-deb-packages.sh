@@ -99,6 +99,3 @@ done
 
 ## snap installs
 snap install --classic go
-
-
-
