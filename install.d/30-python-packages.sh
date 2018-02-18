@@ -16,7 +16,8 @@ pip3 install -U setuptools \
                 scipy \
                 pandas \
                 scrapy \
-                Pillow
+                Pillow \
+                pytest
 
 pip install -U pip
 
