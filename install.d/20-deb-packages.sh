@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
+set -x
 ### Ubuntu/debian packages installation
 
 ## Upgrade current packages
-apt update
-apt upgrade -y
-apt install -y curl python3-apt python-pip python3-pip
+apt-get update
+apt-get upgrade -y
+apt-get install -y curl
 
 ## Add Sublime Text key/repo
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
@@ -20,8 +21,9 @@ sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable
 ## Add Cinnamon desktop repo
 add-apt-repository -y ppa:embrosyn/cinnamon
 
-## Add Google key
+## Add Google chrome repo
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | tee /etc/apt/sources.list.d/google-chrome-stable.list
 
 ## Install Google Cloud repo
 export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
@@ -37,6 +39,9 @@ add-apt-repository -y multiverse
 ## Add Google Drive OCamlFUSE repo
 add-apt-repository -y ppa:alessandro-strada/ppa
 
+## Add KeepPassXC repo
+add-apt-repository -y ppa:phoerious/keepassxc
+
 
 ## Add unofficial Go repo
 ## (needs to be tested)
@@ -45,39 +50,54 @@ add-apt-repository -y ppa:alessandro-strada/ppa
 # or
 # snap install --classic go
 
-# Script to cleanup multiple repo configs. 
+## Script to cleanup multiple repo configs. 
 chmod +x $dotfiles_wd/apt-remove-duplicate-source-entries.py
 
-# install packages
-apt update
-apt install -y python-dev python3-dev python-pip python3-pip pylint \
-            vim \
-            build-essential \
-            libssl-dev libffi-dev libgtk-3-dev libgtk-2-dev\
-            git \
-            net-tools \
-            sublime-text \
-            code \
-            terminator \
-            cinnamon \
-            gimp \
-            google-chrome-stable \
-            google-cloud-sdk \
-            google-cloud-sdk-app-engine-python \
-            google-cloud-sdk-app-engine-python-extras \
-            google-cloud-sdk-app-engine-java \
-            google-cloud-sdk-app-engine-go \
-            google-cloud-sdk-datalab \
-            google-cloud-sdk-datastore-emulator \
-            google-cloud-sdk-pubsub-emulator \
-            google-cloud-sdk-cbt \
-            google-cloud-sdk-bigtable-emulator \
-            kubectl \
-            steam \
-            vlc browser-plugin-vlc \
-            google-drive-ocamlfuse
+## install packages
+## NOTE: This runs through an array of package names to prevent
+## apt-get from failing if one or more packages can't be found
+declare -a apt_packages=(
+  "python-dev"
+  "python3-dev"
+  "python-pip"
+  "python3-pip"
+  "pylint"
+  "vim"
+  "build-essential"
+  "libssl-dev"
+  "libffi-dev"
+  "git"
+  "net-tools"
+  "sublime-text"
+  "keepassxc"
+  "code"
+  "terminator"
+  "cinnamon"
+  "gimp"
+  "google-chrome-stable"
+  "google-cloud-sdk"
+  "google-cloud-sdk-app-engine-python"
+  "google-cloud-sdk-app-engine-python-extras"
+  "google-cloud-sdk-app-engine-java"
+  "google-cloud-sdk-app-engine-go"
+  "google-cloud-sdk-datalab"
+  "google-cloud-sdk-datastore-emulator"
+  "google-cloud-sdk-pubsub-emulator"
+  "google-cloud-sdk-cbt"
+  "google-cloud-sdk-bigtable-emulator"
+  "kubectl"
+  "steam"
+  "vlc"
+  "browser-plugin-vlc"
+  "google-drive-ocamlfuse"
+  )
+apt-get update
+for pack in "${apt_packages[@]}"; do
+  apt-get install -y $pack
+done
 
 
+## snap installs
 snap install --classic go
 
 
