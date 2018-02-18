@@ -19,6 +19,7 @@ pip3 install -U setuptools \
                 Pillow \
                 pytest
 
+
 pip install -U pip
 
 
