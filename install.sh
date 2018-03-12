@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Verbose output, including commands being run
 set -x
 
 ## Personal set-up scripts for Ubuntu Linux
@@ -7,6 +8,7 @@ set -x
 
 ## https://unix.stackexchange.com/questions/190571/sudo-in-non-interactive-script
 ## for idea on how to run sudo in script
+
 
 ## Detect the user who launched the script and save relevant info.
 ## (this might not actually be necessary)
@@ -31,4 +33,5 @@ unset dotfiles_usr
 unset dotfiles_usr_home
 unset dotfiles_wd
 
+## Set back to non-verbose output
 set +x

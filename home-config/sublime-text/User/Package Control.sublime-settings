@@ -1,0 +1,45 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"BracketHighlighter",
+		"Case Conversion",
+		"CSS Completions",
+		"CSScomb",
+		"DocBlockr_Python",
+		"Emmet",
+		"Ethereum",
+		"File Rename",
+		"FileBrowser",
+		"Flask Completions",
+		"Git",
+		"HTML-CSS-JS Prettify",
+		"Jinja2",
+		"Jump Along Indent",
+		"Markdown Preview",
+		"Neon Color Scheme",
+		"Origami",
+		"Package Control",
+		"PlainTasks",
+		"Pretty JSON",
+		"Protocol Buffer Syntax",
+		"Pylinter",
+		"Python 3",
+		"Python Improved",
+		"Python PEP8 Autoformat",
+		"SideBarEnhancements",
+		"SqlBeautifier",
+		"Sublime Bookmarks",
+		"Sublime Tutor",
+		"SublimeLinter",
+		"SublimeLinter-contrib-protoc-gen-lint",
+		"SublimeLinter-contrib-scalac",
+		"SublimeLinter-flake8",
+		"SublimeREPL",
+		"Terminal"
+	]
+}

@@ -2,6 +2,10 @@
 
 ## Python / Python3 setup
 
+## Ignore if we're not on Debian/Ubuntu
+[[ -f /etc/debian_version ]]|| exit 0
+
+
 pip3 install -U pip
 pip3 install -U setuptools \
                 virtualenv \
@@ -12,13 +16,7 @@ pip3 install -U setuptools \
                 pytest \
                 mypy \
                 requests \
-                numpy \
-                matplotlib \
-                scipy \
-                pandas \
-                scrapy \
-                Pillow \
-                pytest
+                scrapy
 
 pip install -U pip
 

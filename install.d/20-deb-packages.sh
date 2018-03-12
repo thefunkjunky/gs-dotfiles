@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
-set -x
 ### Ubuntu/debian packages installation
+
+## Ignore if we're not on Debian/Ubuntu
+[[ -f /etc/debian_version ]]|| exit 0
+
+## Verbose output
+set -x
 
 ## Upgrade current packages
 apt-get update
@@ -99,3 +104,9 @@ done
 
 ## snap installs
 snap install --classic go
+
+## Cleanup
+apt-get autoremove
+
+## Set back to non-verbose output
+set +x
