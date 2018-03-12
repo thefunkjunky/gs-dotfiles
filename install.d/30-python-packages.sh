@@ -7,6 +7,7 @@ pip3 install -U setuptools \
                 virtualenv \
                 xonsh \
                 jupyter \
+                ansible \
                 pyinstaller \
                 pytest \
                 mypy \
