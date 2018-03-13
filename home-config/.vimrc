@@ -95,14 +95,14 @@ let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 "python with virtualenv support
-py << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-  project_base_dir = os.environ['VIRTUAL_ENV']
-  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-  execfile(activate_this, dict(__file__=activate_this))
-EOF
+"py << EOF
+"import os
+"import sys
+"if 'VIRTUAL_ENV' in os.environ:
+"  project_base_dir = os.environ['VIRTUAL_ENV']
+"  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+"  execfile(activate_this, dict(__file__=activate_this))
+"EOF
 
 let python_highlight_all=1
 syntax on
@@ -111,15 +111,14 @@ syntax on
 if has('gui_running')
 	set background=dark
 	colorscheme solarized
-else
-	colorscheme zenburn
+"else
+"	colorscheme zenburn
 endif
 
 " Switch Solarized light and dark with F5
-so ~/.vim/bundle/vim-colors-solarized/autoload/togglebg.vim
-call togglebg#map("<F5>")
+"so ~/.vim/bundle/vim-colors-solarized/autoload/togglebg.vim
+"call togglebg#map("<F5>")
 
 " ignore .pyc in nerdtree 
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
-
 
