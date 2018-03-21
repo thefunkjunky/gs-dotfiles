@@ -25,4 +25,3 @@ sudo -u $dotfiles_usr cp -rf $dotfiles_wd/home-config/bashrc.d $dotfiles_usr_hom
 sudo -u $dotfiles_usr cp  $dotfiles_wd/home-config/.gitconfig $dotfiles_usr_home/.gitconfig
 sudo -u $dotfiles_usr cp $dotfiles_wd/.vimrc $dotfiles_usr_home/.vimrc
 sudo -u $dotfiles_usr cp -rf $dotfiles_wd/input-font/Input_Fonts $dotfiles_usr_home/.fonts/
-

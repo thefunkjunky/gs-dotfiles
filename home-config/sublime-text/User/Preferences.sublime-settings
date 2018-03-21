@@ -30,7 +30,7 @@
 		"site"
 	],
 	"font_face": "Input Mono",
-	"font_size": 17,
+	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -46,6 +46,6 @@
 	"line_padding_top": 1,
 	"scroll_speed": 0,
 	"tab_size": 2,
-	"theme": "Default.sublime-theme",
+	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true
 }

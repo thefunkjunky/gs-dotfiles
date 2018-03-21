@@ -94,7 +94,7 @@ brew cask install vlc
 brew cask install vmware-fusion7
 brew install docker
 brew install docker-machine
-
+brew cask install docker
 
 # Work stuff
 brew install net-snmp

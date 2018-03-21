@@ -1,11 +1,31 @@
 {
 	"bootstrapped": true,
+	"downloader_precedence":
+	{
+		"linux":
+		[
+			"curl",
+			"urllib",
+			"wget"
+		],
+		"osx":
+		[
+			"curl",
+			"urllib"
+		],
+		"windows":
+		[
+			"wininet"
+		]
+	},
 	"in_process_packages":
 	[
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"Alignment",
+		"AlignTab",
 		"BracketHighlighter",
 		"Case Conversion",
 		"CSS Completions",
@@ -21,13 +41,13 @@
 		"Jinja2",
 		"Jump Along Indent",
 		"Markdown Preview",
+		"Material Theme",
 		"Neon Color Scheme",
 		"Origami",
 		"Package Control",
 		"PlainTasks",
 		"Pretty JSON",
 		"Protocol Buffer Syntax",
-		"Pylinter",
 		"Python 3",
 		"Python Improved",
 		"Python PEP8 Autoformat",

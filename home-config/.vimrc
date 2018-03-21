@@ -1,3 +1,6 @@
+" Garrett's mods:
+set number
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: 
 "       Amir Salihefendic
