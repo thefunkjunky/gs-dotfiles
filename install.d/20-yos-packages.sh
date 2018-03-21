@@ -14,100 +14,104 @@ fi
 # Ask for the administrator password upfront.
 sudo -v
 
-brew doctor
+sudo -u $dotfiles_usr brew doctor
 
 # Setup Homebrew Cask.
-brew tap caskroom/cask
-brew install brew-cask
-brew tap caskroom/versions
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/services
-brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
+sudo -u $dotfiles_usr brew tap caskroom/cask
+sudo -u $dotfiles_usr brew install brew-cask
+sudo -u $dotfiles_usr brew tap caskroom/versions
+sudo -u $dotfiles_usr brew tap homebrew/dupes
+sudo -u $dotfiles_usr brew tap homebrew/versions
+sudo -u $dotfiles_usr brew tap homebrew/services
+sudo -u $dotfiles_usr brew update
+sudo -u $dotfiles_usr brew upgrade brew-cask
+sudo -u $dotfiles_usr brew cleanup
+sudo -u $dotfiles_usr brew cask cleanup
 
 # Install more recent versions of some OS X tools
-brew tap homebrew/dupes
+
+sudo -u $dotfiles_usr brew tap homebrew/dupes
 
 
 
 # Upgrade any already-installed formulae.
-brew upgrade
+sudo -u $dotfiles_usr brew upgrade
 
 # Make sure we’re using the latest Homebrew.
-brew update
+sudo -u $dotfiles_usr brew update
 
 # Let's get the latest bash
-brew install bash
-brew install bash-completion2
+sudo -u $dotfiles_usr brew install bash
+sudo -u $dotfiles_usr brew install bash-completion2
 
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew install coreutils
+sudo -u $dotfiles_usr brew install coreutils
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils --with-default-names
+sudo -u $dotfiles_usr brew install findutils --with-default-names
 
 # Install more recent versions of some OS X tools and #JustSysAdminThings
-brew install vim --override-system-vi
-brew install gnu-indent --with-default-names
-brew install gnu-sed --with-default-names
-brew install gnutls --with-default-names
-brew install gnu-tar --with-default-names
-brew install gnu-which --with-default-names
-brew install grep --with-defualt-names
-brew install gawk
-brew install tree
-brew install htop
-brew install git
-brew install wget
+sudo -u $dotfiles_usr brew install vim --override-system-vi
+sudo -u $dotfiles_usr brew install gnu-indent --with-default-names
+sudo -u $dotfiles_usr brew install gnu-sed --with-default-names
+sudo -u $dotfiles_usr brew install gnutls --with-default-names
+sudo -u $dotfiles_usr brew install gnu-tar --with-default-names
+sudo -u $dotfiles_usr brew install gnu-which --with-default-names
+sudo -u $dotfiles_usr brew install grep --with-defualt-names
+sudo -u $dotfiles_usr brew install gawk
+sudo -u $dotfiles_usr brew install tree
+sudo -u $dotfiles_usr brew install htop
+sudo -u $dotfiles_usr brew install git
+sudo -u $dotfiles_usr brew install wget
 
 # Install some recreational stuff
-brew install terminal-notifier
-brew install pianobar
+sudo -u $dotfiles_usr brew install terminal-notifier
+sudo -u $dotfiles_usr brew install pianobar
 
 # This will install all the stuff we need for reasons
-brew cask install google-chrome
-brew cask install google-chrome-canary
-brew cask install dropbox
-brew cask install shiftit
-brew cask install viscosity
-brew cask install alfred
-brew cask install google-drive
-brew cask install skype
-brew cask install transmission
-brew cask install firefox-aurora
-brew cask install sublime-text3
-brew cask install keepassx
-brew cask install caskroom/homebrew-versions/java6
-brew cask install pycharm
-brew cask install slack
-brew cask install xquartz
-brew cask install wireshark
-brew cask install adobe-reader
-brew cask install texshop
-brew cask install calibre
-brew cask install silverlight
-brew cask install vlc
+sudo -u $dotfiles_usr brew cask install google-chrome
+sudo -u $dotfiles_usr brew cask install google-chrome-canary
+sudo -u $dotfiles_usr brew cask install dropbox
+sudo -u $dotfiles_usr brew cask install shiftit
+sudo -u $dotfiles_usr brew cask install viscosity
+sudo -u $dotfiles_usr brew cask install alfred
+sudo -u $dotfiles_usr brew cask install google-drive
+sudo -u $dotfiles_usr brew cask install skype
+sudo -u $dotfiles_usr brew cask install transmission
+sudo -u $dotfiles_usr brew cask install firefox-aurora
+sudo -u $dotfiles_usr brew cask install sublime-text3
+sudo -u $dotfiles_usr brew cask install keepassx
+sudo -u $dotfiles_usr brew cask install caskroom/homebrew-versions/java6
+sudo -u $dotfiles_usr brew cask install pycharm
+sudo -u $dotfiles_usr brew cask install slack
+sudo -u $dotfiles_usr brew cask install xquartz
+sudo -u $dotfiles_usr brew cask install wireshark
+sudo -u $dotfiles_usr brew cask install adobe-reader
+sudo -u $dotfiles_usr brew cask install texshop
+sudo -u $dotfiles_usr brew cask install calibre
+sudo -u $dotfiles_usr brew cask install silverlight
+sudo -u $dotfiles_usr brew cask install vlc
 
 # Docker...no seriously
-brew cask install vmware-fusion7
-brew install docker
-brew install docker-machine
-brew cask install docker
+sudo -u $dotfiles_usr brew cask install vmware-fusion7
+sudo -u $dotfiles_usr brew install docker
+sudo -u $dotfiles_usr brew install docker-machine
+sudo -u $dotfiles_usr brew cask install docker
 
 # Work stuff
-brew install net-snmp
-brew cask install apache-directory-studio
-brew cask install wireshark
-brew update
-brew tap jawshooah/nodenv
-brew install jawshooah/nodenv/nodenv
-brew install --HEAD node-build
+sudo -u $dotfiles_usr brew install net-snmp
+sudo -u $dotfiles_usr brew cask install apache-directory-studio
+sudo -u $dotfiles_usr brew cask install wireshark
+sudo -u $dotfiles_usr brew update
+sudo -u $dotfiles_usr brew tap jawshooah/nodenv
+sudo -u $dotfiles_usr brew install jawshooah/nodenv/nodenv
+sudo -u $dotfiles_usr brew install --HEAD node-build
 
 
 # Remove outdated versions from the cellar.
-brew cleanup
+sudo -u $dotfiles_usr brew cleanup
 
 
 LOCALBASH="/usr/local/bin/bash"
