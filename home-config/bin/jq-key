@@ -2,5 +2,5 @@
 
 ## Search json (stdin) for key and returns all values found
 KEY="$1"
-jq "..|.$KEY?" | grep "\"" | tr -d \"
+jq "..|.$KEY?" | grep "\"" | tr -d \" | sort | uniq
 
