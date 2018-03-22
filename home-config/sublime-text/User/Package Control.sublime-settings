@@ -60,6 +60,7 @@
 		"SublimeLinter-contrib-scalac",
 		"SublimeLinter-flake8",
 		"SublimeREPL",
-		"Terminal"
+		"Terminal",
+		"Terraform"
 	]
 }
