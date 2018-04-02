@@ -12,7 +12,7 @@ if test ! $(which brew); then
 fi
 
 # Ask for the administrator password upfront.
-sudo -v
+# sudo -v
 
 sudo -u $dotfiles_usr brew doctor
 
