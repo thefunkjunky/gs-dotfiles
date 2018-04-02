@@ -1,0 +1,79 @@
+# Brewfile packages
+# Setup Cask to install Apps via homebrew.
+tap 'caskroom/cask'
+tap 'caskroom/versions'
+tap 'homebrew/versions'
+tap 'homebrew/services'
+tap 'homebrew/dupes'
+
+# Replace OSX binaries with GNU binaries.
+brew 'coreutils'
+brew 'binutils'
+brew 'binutils'
+brew 'diffutils'
+brew 'ed', args: ["--with-default-names"]
+brew 'findutils', args: ["--with-default-names"]
+brew 'gawk'
+brew 'gnu-indent', args: ["--with-default-names"]
+brew 'gnu-sed', args: ["--with-default-names"]
+brew 'gnu-tar', args: ["--with-default-names"]
+brew 'gnu-which', args: ["--with-default-names"]
+brew 'gnutls', args: ["--with-default-names"]
+brew 'go'
+brew 'grep', args: ["--with-default-names"]
+brew 'gzip'
+brew 'htop'
+brew 'screen'
+brew 'tree'
+brew 'watch'
+brew 'wdiff', args: ["--with-gettext"]
+brew 'wget'
+
+# OS X ships a GNU version, but too old
+brew 'bash'
+brew 'bash-completion2'
+brew 'emacs'
+brew 'gdb'
+brew 'gpatch'
+brew 'm4'
+brew 'make'
+ 
+# Other commands (non-GNU)
+brew 'file-formula'
+brew 'git'
+brew 'less'
+brew 'openssh'
+tap 'homebrew/versions'
+brew 'perl518'
+brew 'python'
+brew 'python3'
+brew 'rsync'
+brew 'svn'
+brew 'unzip'
+brew 'vim', args: ["--override-system-vi"]
+brew 'zsh'
+
+# Useful Applications
+cask 'adobe-reader'
+cask 'alfred'
+cask 'atom'
+cask 'docker'
+cask 'flux'
+cask 'firefox'
+cask 'keepassxc'
+cask 'google-chrome'
+cask 'hipchat'
+cask 'iterm2'
+cask 'shiftit'
+cask 'skype'
+cask 'spectacle'
+cask 'sublime-text3'
+cask 'visual-studio-code'
+cask 'vlc'
+
+# Docker
+brew 'docker'
+brew 'docker-compose'
+brew 'docker-machine'
+cask 'docker'
+cask 'vmware-fusion7'

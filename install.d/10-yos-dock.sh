@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Ignore if we're not on OSX
-[[ "$OSTYPE" =~ ^darwin ]] || exit 0
+[[ "$OSTYPE" =~ darwin* ]] || exit 0
 
 # Faster Dock
 defaults write com.apple.Dock autohide-delay -float 0.1
