@@ -7,3 +7,11 @@ https://github.com/mrzool/bash-sensible
 https://github.com/amix/vimrc (basic version)  
 
 NOTE: This is still a work in progress.  Some things need to be deprecated, removed, modified, and added.  Use at your own risk.
+
+## Usage
+Must be run as sudo:
+
+```
+$ chmod +x install.sh
+$ sudo ./install.sh
+```
