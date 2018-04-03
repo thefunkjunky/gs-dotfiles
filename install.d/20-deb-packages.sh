@@ -107,6 +107,7 @@ snap install --classic go
 
 ## Cleanup
 apt-get autoremove
+python3 $dotfiles_wd/apt-remove-duplicate-source-entries.py
 
 ## Set back to non-verbose output
 set +x
