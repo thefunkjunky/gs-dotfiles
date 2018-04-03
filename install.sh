@@ -3,7 +3,7 @@
 # Verbose output, including commands being run
 set -x
 
-## Personal set-up scripts for Ubuntu Linux
+## Personal set-up scripts for Ubuntu Linux and OSX
 ## Heavily inspired (*ahem* copied) by https://github.com/Juxtaposedwords/dotfiles
 
 ## https://unix.stackexchange.com/questions/190571/sudo-in-non-interactive-script
@@ -17,7 +17,7 @@ export dotfiles_usr_home=$(sudo -u $dotfiles_usr echo $HOME)
 export dotfiles_wd=$(sudo -u $dotfiles_usr pwd)
 
 ## Exit if the script was not launched by root or through sudo
-if [ -z $dotfiles_usr ] && [ $USER = "root" ]
+if [ "$EUID" -ne 0 ]
 then
     echo "The script needs to run as root" && exit 1
 fi
