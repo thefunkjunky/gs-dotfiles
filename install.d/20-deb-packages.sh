@@ -62,6 +62,7 @@ chmod +x $dotfiles_wd/apt-remove-duplicate-source-entries.py
 ## NOTE: This runs through an array of package names to prevent
 ## apt-get from failing if one or more packages can't be found
 declare -a apt_packages=(
+  "python3"
   "python-dev"
   "python3-dev"
   "python-pip"
@@ -100,7 +101,6 @@ apt-get update
 for pack in "${apt_packages[@]}"; do
   apt-get install -y $pack
 done
-
 
 ## snap installs
 snap install --classic go
