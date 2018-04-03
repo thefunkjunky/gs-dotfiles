@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Ignore if we're not on OSX
-[[ "$OSTYPE" =~ ^darwin ]] || exit 0
+[[ "$OSTYPE" =~ darwin* ]] || exit 0
 
 
 # A lot of these have been stolen from various guides

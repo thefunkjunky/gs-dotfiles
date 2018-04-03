@@ -37,7 +37,7 @@ brew 'gdb'
 brew 'gpatch'
 brew 'm4'
 brew 'make'
- 
+
 # Other commands (non-GNU)
 brew 'file-formula'
 brew 'git'
