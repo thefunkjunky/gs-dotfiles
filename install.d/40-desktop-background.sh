@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+OS="$(uname -s)"
 IMAGE_LOC="$dotfiles_wd/home-config/desktop-background.jpg"
 
 if ["$OS" = "Darwin"]; then
