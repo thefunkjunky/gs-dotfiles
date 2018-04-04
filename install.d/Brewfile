@@ -2,9 +2,9 @@
 # Setup Cask to install Apps via homebrew.
 tap 'caskroom/cask'
 tap 'caskroom/versions'
-tap 'homebrew/versions'
+# tap 'homebrew/versions'
 tap 'homebrew/services'
-tap 'homebrew/dupes'
+# tap 'homebrew/dupes'
 
 # Replace OSX binaries with GNU binaries.
 brew 'coreutils'
@@ -54,12 +54,13 @@ brew 'vim', args: ["--override-system-vi"]
 brew 'zsh'
 
 # Useful Applications
-cask 'adobe-reader'
+cask 'adobe-acrobat-reader'
 cask 'alfred'
 cask 'atom'
 cask 'firefox'
 cask 'keepassxc'
 cask 'google-chrome'
+brew 'gron'
 cask 'iterm2'
 cask 'shiftit'
 cask 'skype'
@@ -67,7 +68,6 @@ cask 'spectacle'
 cask 'sublime-text3'
 cask 'visual-studio-code'
 cask 'vlc'
-brew 'gron'
 
 # Docker
 brew 'docker'
