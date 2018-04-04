@@ -67,11 +67,15 @@ cask 'skype'
 cask 'spectacle'
 cask 'sublime-text3'
 cask 'visual-studio-code'
+cask 'vagrant'
+cask 'vagrant-manager'
 cask 'vlc'
 
-# Docker
+# Docker / Kubernetes
 brew 'docker'
 brew 'docker-compose'
 brew 'docker-machine'
 cask 'docker'
+brew 'kubectl'
+cask 'virtualbox'
 cask 'vmware-fusion7'

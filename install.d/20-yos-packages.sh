@@ -23,7 +23,7 @@ sudo -u $dotfiles_usr brew upgrade
 sudo -u $dotfiles_usr brew update
 
 # Install packages in local Brewfile
-sudo -u $dotfiles_usr brew bundle
+sudo -u $dotfiles_usr brew bundle install --verbose
 sudo -u $dotfiles_usr brew bundle check
 sudo -u $dotfiles_usr brew bundle cleanup
 
