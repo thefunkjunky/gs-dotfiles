@@ -1,10 +1,11 @@
 {
+	"always_show_minimap_viewport": true,
 	"auto_complete": true,
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"color_scheme": "Packages/Neon Color Scheme/Neon.tmTheme",
-	"draw_minimap_border": false,
-	"draw_white_space": "all",
+	"draw_minimap_border": true,
+	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
@@ -35,7 +36,6 @@
 	"ignored_packages":
 	[
 		"DocBlockr_Python",
-		"Flask Completions",
 		"Python PEP8 Autoformat",
 		"SublimeLinter",
 		"SublimeLinter-flake8",
