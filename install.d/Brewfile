@@ -20,6 +20,7 @@ brew 'gnu-tar', args: ["--with-default-names"]
 brew 'gnu-which', args: ["--with-default-names"]
 brew 'gnutls', args: ["--with-default-names"]
 brew 'go'
+brew 'dep'
 brew 'grep', args: ["--with-default-names"]
 brew 'gzip'
 brew 'htop'
@@ -80,3 +81,4 @@ cask 'docker'
 brew 'kubectl'
 cask 'virtualbox'
 cask 'vmware-fusion7'
+brew 'stern'
