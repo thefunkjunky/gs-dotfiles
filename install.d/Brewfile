@@ -41,6 +41,7 @@ brew 'make'
 
 # Other commands (non-GNU)
 brew 'file-formula'
+brew 'fzf'
 brew 'git'
 brew 'less'
 brew 'openssh'
