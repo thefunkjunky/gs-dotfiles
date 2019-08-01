@@ -56,6 +56,7 @@ brew 'vim', args: ["--override-system-vi"]
 brew 'zsh'
 
 # Useful Applications
+brew 'asciinema'
 cask 'adobe-acrobat-reader'
 cask 'alfred'
 cask 'atom'
