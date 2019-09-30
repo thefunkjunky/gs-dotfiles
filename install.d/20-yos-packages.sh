@@ -39,3 +39,6 @@ fi
 
 # Move /usr/local/bin to the top of the path
 sudo sed -ie  '/^\/usr\/local\/bin/!H;//p;$!d;g;s/\n//' /etc/paths
+
+pip install pylint
+pip3 install pylint

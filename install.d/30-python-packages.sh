@@ -8,6 +8,7 @@
 pip install -U pip
 pip install -U setuptools \
                 virtualenv \
+                pylint
 
 pip3 install -U pip
 pip3 install -U setuptools \
@@ -16,9 +17,8 @@ pip3 install -U setuptools \
                 ansible \
                 pyinstaller \
                 pytest \
+                pylint \
                 mypy \
                 requests \
                 scrapy
-
-
 

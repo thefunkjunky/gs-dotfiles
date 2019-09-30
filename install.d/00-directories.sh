@@ -21,3 +21,4 @@ sudo -u $dotfiles_usr cp  $dotfiles_wd/home-config/.bashrc $dotfiles_usr_home/.b
 sudo -u $dotfiles_usr cp  $dotfiles_wd/home-config/.bash_profile $dotfiles_usr_home/.bash_profile
 sudo -u $dotfiles_usr cp -rf $dotfiles_wd/home-config/bashrc.d $dotfiles_usr_home/.shellrc/
 sudo -u $dotfiles_usr cp $dotfiles_wd/.vimrc $dotfiles_usr_home/.vimrc
+sudo -u $dotfiles_usr cp $dotfiles_wd/.pylintrc $dotfiles_usr_home/.pylintrc
