@@ -258,14 +258,36 @@ sexy_bash_prompt_get_git_info () {
 }
 
 # Define the sexy-bash-prompt
-PS1="\[$sexy_bash_prompt_user_color\]\u\[$sexy_bash_prompt_reset\] \
-\[$sexy_bash_prompt_preposition_color\]at\[$sexy_bash_prompt_reset\] \
-\[$sexy_bash_prompt_device_color\]\h\[$sexy_bash_prompt_reset\] \
-\[$sexy_bash_prompt_preposition_color\]in\[$sexy_bash_prompt_reset\] \
-\[$sexy_bash_prompt_dir_color\]\w\[$sexy_bash_prompt_reset\]\
+# # Original
+# PS1="\[$sexy_bash_prompt_user_color\]\u\[$sexy_bash_prompt_reset\] \
+# \[$sexy_bash_prompt_preposition_color\]at\[$sexy_bash_prompt_reset\] \
+# \[$sexy_bash_prompt_device_color\]\h\[$sexy_bash_prompt_reset\] \
+# \[$sexy_bash_prompt_preposition_color\]in\[$sexy_bash_prompt_reset\] \
+# \[$sexy_bash_prompt_dir_color\]\w\[$sexy_bash_prompt_reset\]\
+# \$( sexy_bash_prompt_is_on_git && \
+#   echo -n \" \[$sexy_bash_prompt_preposition_color\]on\[$sexy_bash_prompt_reset\] \" && \
+#   echo -n \"\[$sexy_bash_prompt_git_status_color\]\$(sexy_bash_prompt_get_git_info)\" && \
+#   echo -n \"\[$sexy_bash_prompt_git_progress_color\]\$(sexy_bash_prompt_get_git_progress)\" && \
+#   echo -n \"\[$sexy_bash_prompt_preposition_color\]\")\n\[$sexy_bash_prompt_reset\]\
+# \[$sexy_bash_prompt_symbol_color\]$sexy_bash_prompt_symbol \[$sexy_bash_prompt_reset\]"
+fancy_prompt() {
+  local bold="$(tput bold)"
+  local reset="$(tput sgr0)"
+  local orange="$(tput setaf 208)"
+  local pink="$(tput setaf 6)"
+  local green="$(tput setaf 2)"
+  local blue="$(tput setaf 4)"
+  local purple="$(tput setaf 5)"
+  local rev="$(tput rev)"
+  local lb='['
+  local rb=']'
+
+  PS1="$green\[\u$orange@$green\h\] \[$orange\]\w\[$green\]\
 \$( sexy_bash_prompt_is_on_git && \
-  echo -n \" \[$sexy_bash_prompt_preposition_color\]on\[$sexy_bash_prompt_reset\] \" && \
-  echo -n \"\[$sexy_bash_prompt_git_status_color\]\$(sexy_bash_prompt_get_git_info)\" && \
-  echo -n \"\[$sexy_bash_prompt_git_progress_color\]\$(sexy_bash_prompt_get_git_progress)\" && \
-  echo -n \"\[$sexy_bash_prompt_preposition_color\]\")\n\[$sexy_bash_prompt_reset\]\
-\[$sexy_bash_prompt_symbol_color\]$sexy_bash_prompt_symbol \[$sexy_bash_prompt_reset\]"
+echo -n \" \[$sexy_bash_prompt_preposition_color\]on\[$sexy_bash_prompt_reset\] \" && \
+echo -n \"\[$sexy_bash_prompt_git_status_color\]\$(sexy_bash_prompt_get_git_info)\" && \
+echo -n \"\[$sexy_bash_prompt_git_progress_color\]\$(sexy_bash_prompt_get_git_progress)\" && \
+echo -n \"\[$sexy_bash_prompt_preposition_color\]\")\n└─▶ $reset"
+}
+
+fancy_prompt
