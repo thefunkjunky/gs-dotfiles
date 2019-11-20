@@ -287,7 +287,7 @@ fancy_prompt() {
 echo -n \" \[$sexy_bash_prompt_preposition_color\]on\[$sexy_bash_prompt_reset\] \" && \
 echo -n \"\[$sexy_bash_prompt_git_status_color\]\$(sexy_bash_prompt_get_git_info)\" && \
 echo -n \"\[$sexy_bash_prompt_git_progress_color\]\$(sexy_bash_prompt_get_git_progress)\" && \
-echo -n \"\[$sexy_bash_prompt_preposition_color\]\")\n└─▶ $reset"
+echo -n \"\[$sexy_bash_prompt_preposition_color\]\")\n└─▶ \[$reset\]"
 }
 
 fancy_prompt
