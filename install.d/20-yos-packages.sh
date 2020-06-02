@@ -8,7 +8,7 @@
 # make sure we have xcode...homebrew requires
 if test ! $(which brew); then
    echo "Installing homebrew..."
-   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   sudo -u $dotfiles_usr /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # Ask for the administrator password upfront.
@@ -23,9 +23,9 @@ sudo -u $dotfiles_usr brew upgrade
 sudo -u $dotfiles_usr brew update
 
 # Install packages in local Brewfile
-sudo -u $dotfiles_usr brew bundle install --verbose
-sudo -u $dotfiles_usr brew bundle check
-sudo -u $dotfiles_usr brew bundle cleanup
+sudo -u $dotfiles_usr brew bundle install --file $dotfiles_wd/install.d/Brewfile --verbose
+sudo -u $dotfiles_usr brew bundle check --file $dotfiles_wd/install.d/Brewfile
+sudo -u $dotfiles_usr brew bundle cleanup --file $dotfiles_wd/install.d/Brewfile
 
 # Remove outdated versions from the cellar.
 sudo -u $dotfiles_usr brew cleanup

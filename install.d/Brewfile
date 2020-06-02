@@ -1,7 +1,7 @@
 # Brewfile packages
 # Setup Cask to install Apps via homebrew.
-tap 'caskroom/cask'
-tap 'caskroom/versions'
+tap 'homebrew/homebrew-cask'
+tap 'homebrew/cask-versions'
 # tap 'homebrew/versions'
 tap 'homebrew/services'
 # tap 'homebrew/dupes'
@@ -9,25 +9,24 @@ tap 'homebrew/services'
 # Replace OSX binaries with GNU binaries.
 brew 'coreutils'
 brew 'binutils'
-brew 'binutils'
 brew 'diffutils'
-brew 'ed', args: ["--with-default-names"]
-brew 'findutils', args: ["--with-default-names"]
+brew 'ed'
+brew 'findutils'
 brew 'gawk'
-brew 'gnu-indent', args: ["--with-default-names"]
-brew 'gnu-sed', args: ["--with-default-names"]
-brew 'gnu-tar', args: ["--with-default-names"]
-brew 'gnu-which', args: ["--with-default-names"]
-brew 'gnutls', args: ["--with-default-names"]
+brew 'gnu-indent'
+brew 'gnu-sed'
+brew 'gnu-tar'
+brew 'gnu-which'
+brew 'gnutls'
 brew 'go'
 brew 'dep'
-brew 'grep', args: ["--with-default-names"]
+brew 'grep'
 brew 'gzip'
 brew 'htop'
 brew 'screen'
 brew 'tree'
 brew 'watch'
-brew 'wdiff', args: ["--with-gettext"]
+brew 'wdiff'
 brew 'wget'
 
 # OS X ships a GNU version, but too old
@@ -53,7 +52,7 @@ brew 'p7zip'
 brew 'rsync'
 brew 'svn'
 brew 'unzip'
-brew 'vim', args: ["--override-system-vi"]
+brew 'vim'
 brew 'zsh'
 
 # Useful Applications
@@ -86,3 +85,4 @@ brew 'kubectl'
 cask 'virtualbox'
 cask 'vmware-fusion7'
 brew 'stern'
+brew 'minikube'

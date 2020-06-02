@@ -31,7 +31,6 @@
 		"CSS Completions",
 		"CSScomb",
 		"DocBlockr_Python",
-		"Emmet",
 		"Ethereum",
 		"Expand Selection to Quotes",
 		"File Rename",
@@ -64,5 +63,9 @@
 		"SublimeREPL",
 		"Terminal",
 		"Terraform"
+	],
+	"repositories":
+	[
+		"https://github.com/emmetio/sublime-text-plugin/releases/latest/download/registry.json"
 	]
 }

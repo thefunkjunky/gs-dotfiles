@@ -37,7 +37,6 @@
 	[
 		"DocBlockr_Python",
 		"Python PEP8 Autoformat",
-		"SublimeLinter",
 		"SublimeLinter-flake8",
 		"Vintage"
 	],
