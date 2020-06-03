@@ -13,6 +13,8 @@ sudo -u $dotfiles_usr mkdir -p $dotfiles_usr_home/gitclones
 sudo -u $dotfiles_usr mkdir -p $dotfiles_usr_home/mounts
 sudo -u $dotfiles_usr mkdir -p $dotfiles_usr_home/bin
 sudo -u $dotfiles_usr mkdir -p $dotfiles_usr_home/Google-Drive
+sudo -u $dotfiles_usr mkdir -p $dotfiles_usr_home/Pictures/Screenshots
+sudo -u $dotfiles_usr mkdir -p $dotfiles_usr_home/Projects/Music
 sudo -u $dotfiles_usr mkdir -p $dotfiles_usr_home/Projects/Music
 sudo -u $dotfiles_usr mkdir -p $dotfiles_usr_home/Projects/Coding
 sudo -u $dotfiles_usr mkdir -p $dotfiles_usr_home/Go/src
