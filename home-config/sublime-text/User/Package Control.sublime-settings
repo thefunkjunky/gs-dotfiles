@@ -16,7 +16,7 @@
 		"windows":
 		[
 			"wininet"
-		]
+		],
 	},
 	"in_process_packages":
 	[
@@ -37,6 +37,7 @@
 		"FileBrowser",
 		"Git",
 		"Gofmt",
+		"GoGuru",
 		"Golang Build",
 		"HTML-CSS-JS Prettify",
 		"Jinja2",
@@ -46,6 +47,7 @@
 		"Neon Color Scheme",
 		"Origami",
 		"Package Control",
+		"PackageResourceViewer",
 		"PlainTasks",
 		"Pretty JSON",
 		"Protocol Buffer Syntax",
@@ -57,15 +59,15 @@
 		"Sublime Bookmarks",
 		"Sublime Tutor",
 		"SublimeLinter",
+		"SublimeLinter-contrib-gometalinter",
 		"SublimeLinter-flake8",
-		"SublimeLinter-gotype",
 		"SublimeREPL",
 		"Terminal",
 		"Terminus",
-		"Terraform"
+		"Terraform",
 	],
 	"repositories":
 	[
 		"https://github.com/emmetio/sublime-text-plugin/releases/latest/download/registry.json"
-	]
+	],
 }
