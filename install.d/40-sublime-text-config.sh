@@ -12,5 +12,5 @@ fi
 if [ "$OS" = "Darwin" ]; then
   echo $DOTF_ST3_USER_LOC
   echo $OSX_SB3_PKG_LOC
-  sudo -u $dotfiles_usr cp -rf $DOTF_ST3_USER_LOC $OSX_SB3_PKG_LOC
+  sudo -u $dotfiles_usr cp -f $DOTF_ST3_USER_LOC $OSX_SB3_PKG_LOC
 fi

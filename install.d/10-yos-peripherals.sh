@@ -6,7 +6,7 @@
 # Mice, keyboard, etc                                                         #
 ###############################################################################
 # Set a blazingly fast keyboard repeat rate
-# sudo -u $dotfiles_usr defaults write NSGlobalDomain KeyRepeat -int 0
+sudo -u $dotfiles_usr defaults write NSGlobalDomain KeyRepeat -int 0
 
 # disable Natural scrolling
 # sudo -u $dotfiles_usr defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
