@@ -1,21 +1,15 @@
 {
 	"always_show_minimap_viewport": true,
 	"auto_complete": true,
-	"auto_complete_triggers":
-	[
-		{
-			"characters": "<",
-			"selector": "text.html",
-		},
-		{
-			"characters": ".",
-			"selector": "source.go",
-		}
-	],
 	"bold_folder_labels": true,
 	"caret_style": "phase",
+	"wide_caret": true,
+	"spell_check": true,
 	"color_scheme": "Packages/Neon Color Scheme/Neon.sublime-color-scheme",
 	"draw_minimap_border": true,
+	"highlight_modified_tabs": true,
+	"word_wrap": true,
+	"show_project_first": true,
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
@@ -42,7 +36,7 @@
 		"site"
 	],
 	"font_face": "Input Mono",
-	"font_size": 15,
+	"font_size": 16,
 	"highlight_line": true,
 	"ignored_packages":
 	[
