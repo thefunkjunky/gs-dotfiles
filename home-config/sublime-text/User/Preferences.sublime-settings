@@ -36,7 +36,7 @@
 		"site"
 	],
 	"font_face": "Input Mono",
-	"font_size": 16,
+	"font_size": 18,
 	"highlight_line": true,
 	"ignored_packages":
 	[

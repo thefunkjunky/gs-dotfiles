@@ -1,4 +1,0 @@
-{
-	"goguru_debug": false,
-  "goguru_env": {"GOPATH": "$HOME/go/bin:$PATH"}
-}
