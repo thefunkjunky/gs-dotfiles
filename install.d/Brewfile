@@ -86,4 +86,5 @@ cask 'visual-studio-code'
 cask 'vlc'
 cask 'ffmpeg'
 cask 'libreoffice'
+cask 'audacity'
 
