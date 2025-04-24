@@ -87,4 +87,5 @@ cask 'vlc'
 cask 'ffmpeg'
 cask 'libreoffice'
 cask 'audacity'
-
+cask 'krita'
+cask 'sdformatter'
